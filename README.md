@@ -11,3 +11,5 @@ This is a whatsapp ux redesign i did. The aim of this project was to solidify my
 
 ![presentation](presentation/3.png?raw=true)
 
+![presentation](presentation/final_mockup.png?raw=true)
+
