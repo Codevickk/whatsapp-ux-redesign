@@ -13,3 +13,6 @@ This is a whatsapp ux redesign i did. The aim of this project was to solidify my
 
 ![presentation](presentation/final_mockup.png?raw=true)
 
+## Link to design specs
+
+https://xd.adobe.com/view/9cd504a8-5fc6-476d-bbe2-41b965161061-c986/
