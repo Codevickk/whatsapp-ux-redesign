@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:wio_flutter/widgets/app_bar.dart';
-import 'package:wio_flutter/widgets/bottom_nav.dart';
-import 'package:wio_flutter/widgets/chat_list.dart';
-import 'package:badges/badges.dart';
-import 'package:wio_flutter/widgets/fab.dart';
+import 'package:whatsapp_ui/widgets/app_bar.dart';
+import 'package:whatsapp_ui/widgets/bottom_nav.dart';
+import 'package:whatsapp_ui/widgets/chat_list.dart';
+import 'package:whatsapp_ui/widgets/fab.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -55,23 +54,22 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: customAppBar(title(), false, context),
-        body: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: PageView(
-              physics: BouncingScrollPhysics(),
-              controller: _pageController,
-              onPageChanged: onPageChanged,
-              children: [
-                chatList(),
-                chatList(),
-                chatList(),
-                chatList(),
-              ],
-            )),
-        floatingActionButton: fab(_page, context),
-        bottomNavigationBar: bottomNavBar(_page, context, navigationTapped)
-      ),
+          appBar: customAppBar(title(), false, context),
+          body: Padding(
+              padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+              child: PageView(
+                physics: BouncingScrollPhysics(),
+                controller: _pageController,
+                onPageChanged: onPageChanged,
+                children: [
+                  chatList(context),
+                  chatList(context),
+                  chatList(context),
+                  chatList(context),
+                ],
+              )),
+          floatingActionButton: fab(_page, context),
+          bottomNavigationBar: bottomNavBar(_page, context, navigationTapped)),
     );
   }
 }

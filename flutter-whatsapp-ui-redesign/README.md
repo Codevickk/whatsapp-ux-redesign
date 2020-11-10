@@ -1,4 +1,4 @@
-# wio_flutter
+# whatsapp_ui
 
 A new Flutter project.
 
