@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/trekhub/Desktop/wio/whatsapp-ux-redesign/flutter-whatsapp-ui-redesign/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
+            "outputFile": "C:\\projects\\flutter-apps\\whatsapp-ux-redesign\\flutter-whatsapp-ui-redesign\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
             "map": [
                 {
-                    "source": "/home/trekhub/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/values-de/values-de.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-de\\values-de.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

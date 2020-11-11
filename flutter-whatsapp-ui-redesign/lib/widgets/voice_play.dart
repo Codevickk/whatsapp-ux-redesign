@@ -13,19 +13,17 @@ Widget voicePlay(BuildContext context) {
           "Dan Scott",
           style: TextStyle(color: Colors.black),
         ),
-        subtitle: Flexible(
-          child: Row(
-            children: [
-              Text(
-                "Voice message",
-                style: TextStyle(color: Colors.grey[400]),
-              ),
-              Icon(
-                Icons.mic,
-                color: Theme.of(context).accentColor,
-              )
-            ],
-          ),
+        subtitle: Row(
+          children: [
+            Text(
+              "Voice message",
+              style: TextStyle(color: Colors.grey[400]),
+            ),
+            Icon(
+              Icons.mic,
+              color: Theme.of(context).accentColor,
+            )
+          ],
         ),
         trailing: IconButton(
           icon: Icon(Icons.remove_red_eye_outlined),

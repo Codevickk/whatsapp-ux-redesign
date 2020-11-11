@@ -32,6 +32,12 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "chat_bubbles",
+      "rootUri": "file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/chat_bubbles-0.7.8+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0-nullsafety.1",
       "packageUri": "lib/",
@@ -158,7 +164,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-11-11T12:32:23.905619Z",
+  "generated": "2020-11-11T14:50:22.291694Z",
   "generator": "pub",
   "generatorVersion": "2.10.3"
 }

@@ -13,19 +13,17 @@ Widget voicePreview(BuildContext context) {
           "Dan Scott",
           style: TextStyle(color: Colors.black),
         ),
-        subtitle: Flexible(
-          child: Row(
-            children: [
-              Text(
-                "Preview Voice message",
-                style: TextStyle(color: Colors.grey[400]),
-              ),
-              Icon(
-                Icons.mic,
-                color: Theme.of(context).accentColor,
-              )
-            ],
-          ),
+        subtitle: Row(
+          children: [
+            Text(
+              "Preview Voice message",
+              style: TextStyle(color: Colors.grey[400]),
+            ),
+            Icon(
+              Icons.mic,
+              color: Theme.of(context).accentColor,
+            )
+          ],
         ),
       ),
       ListTile(
@@ -52,12 +50,25 @@ Widget voicePreview(BuildContext context) {
           )
         ],
       ),
-
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          RaisedButton(onPressed: (){}, color: Colors.red, child: Text("Discard", style: TextStyle(color: Colors.white),),),
-          RaisedButton(onPressed: (){}, color: Colors.green, child: Text("Send", style: TextStyle(color: Colors.white),),)
+          RaisedButton(
+            onPressed: () {},
+            color: Colors.red,
+            child: Text(
+              "Discard",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+          RaisedButton(
+            onPressed: () {},
+            color: Colors.green,
+            child: Text(
+              "Send",
+              style: TextStyle(color: Colors.white),
+            ),
+          )
         ],
       )
     ],
