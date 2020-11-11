@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'voice_play.dart';
-import 'voice_preview.dart';
 import 'chat_card.dart';
 
 Widget chatList(BuildContext context) {
@@ -15,7 +13,11 @@ Widget chatList(BuildContext context) {
               builder: (BuildContext context) => Dialog(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12.0)),
-                    child: Container(height: 190, width: 400,  child: voicePlay(context),),
+                    child: Container(
+                      height: 160,
+                      width: 400,
+                      child: voicePlay(context),
+                    ),
                   )),
           icon: Icon(Icons.play_arrow),
           color: Colors.white,
