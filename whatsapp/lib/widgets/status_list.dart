@@ -6,9 +6,8 @@ import 'my_status.dart';
 
 Widget statusList(BuildContext context) {
   return SingleChildScrollView(
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+    child: ListView(
+      children: <Widget>[
         SizedBox(
           height: 5.0,
         ),
@@ -20,7 +19,9 @@ Widget statusList(BuildContext context) {
         SizedBox(
           height: 10.0,
         ),
-        recentStatus(context)
+        
+        ...recentStatus(context),
+      
       ],
     ),
   );
