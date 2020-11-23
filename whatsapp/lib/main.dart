@@ -14,6 +14,8 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        debugShowCheckedModeBanner: false, theme: themeData(), home: MainScreen());
+        debugShowCheckedModeBanner: false,
+        theme: themeData(),
+        home: MainScreen());
   }
 }

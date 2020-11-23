@@ -21,8 +21,8 @@ Widget fab(int _page, BuildContext context) {
           ),
         )
       : _page == 3
-          ? null
-          : FloatingActionButton(
+          ? FloatingActionButton(onPressed: (){}, child: Icon(Icons.call_outlined), )
+          :  FloatingActionButton(
               onPressed: () {},
               child: Icon(Icons.message_outlined),
               backgroundColor: Theme.of(context).accentColor,

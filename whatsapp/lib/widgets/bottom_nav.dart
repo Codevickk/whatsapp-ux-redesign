@@ -25,21 +25,20 @@ Widget bottomNavBar(int _page, BuildContext context, navigationTapped) {
                   "https://cdn.onlinewebfonts.com/svg/img_314410.png",
                   height: 24,
                   width: 24,
-                  color: _page == 0 ?Theme.of(context).accentColor : null,
+                  color: _page == 0 ? Theme.of(context).accentColor : null,
                 ))),
             label: ""),
         BottomNavigationBarItem(
             icon: Badge(
-              badgeContent: Text("2"),
-              badgeColor:Theme.of(context).accentColor,
-              child: Container(
+                badgeContent: Text("2"),
+                badgeColor: Theme.of(context).accentColor,
+                child: Container(
                     child: Image.network(
                   "https://cdn.iconscout.com/icon/free/png-512/group-chat-2193254-1878104.png",
                   height: 24,
                   width: 24,
-                  color: _page == 1 ?Theme.of(context).accentColor : null,
-                ))
-            ),
+                  color: _page == 1 ? Theme.of(context).accentColor : null,
+                ))),
             label: ""),
         BottomNavigationBarItem(
             icon: Badge(
@@ -51,7 +50,7 @@ Widget bottomNavBar(int _page, BuildContext context, navigationTapped) {
             ),
             label: ""),
         BottomNavigationBarItem(
-          icon: Icon(Icons.call),
+          icon: Icon(Icons.phone_outlined),
           label: "",
         ),
       ],

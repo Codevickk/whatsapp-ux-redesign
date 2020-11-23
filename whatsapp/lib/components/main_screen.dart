@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/widgets/app_bar.dart';
 import 'package:whatsapp/widgets/bottom_nav.dart';
+import 'package:whatsapp/widgets/call_list.dart';
 import 'package:whatsapp/widgets/chat_list.dart';
 import 'package:whatsapp/widgets/fab.dart';
 import 'package:whatsapp/widgets/status_list.dart';
@@ -66,7 +67,7 @@ class _MainScreenState extends State<MainScreen> {
                   ChatList(),
                   ChatList(),
                   StatusList(),
-                  ChatList(),
+                  CallList(),
                 ],
               )),
           floatingActionButton: fab(_page, context),
