@@ -27,7 +27,7 @@ List items = [
   "Name",
   "Another"
 ];
-List<Widget> recentStatus(BuildContext context) {
+List<Widget> viewedStatus(BuildContext context) {
   List<Widget> _childWidgets = [];
   for (var i = 0; i < items.length; i++) {
     _childWidgets.add(childWidgets(items[i]));
@@ -44,8 +44,7 @@ childWidgets(i) {
           CircleAvatar(
             radius: 40,
             backgroundImage: NetworkImage(
-              "https://images.unsplash.com/photo-1602526433141-e6e2362e4dbf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-            ),
+                "https://images.unsplash.com/photo-1602526433141-e6e2362e4dbf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

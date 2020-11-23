@@ -5,12 +5,12 @@ import 'package:whatsapp/widgets/chat_list.dart';
 import 'package:whatsapp/widgets/fab.dart';
 import 'package:whatsapp/widgets/status_list.dart';
 
-class Home extends StatefulWidget {
+class MainScreen extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _MainScreenState createState() => _MainScreenState();
 }
 
-class _HomeState extends State<Home> {
+class _MainScreenState extends State<MainScreen> {
   PageController _pageController;
   int _page = 0;
 
@@ -63,10 +63,10 @@ class _HomeState extends State<Home> {
                 controller: _pageController,
                 onPageChanged: onPageChanged,
                 children: [
-                  chatList(context),
-                  chatList(context),
-                  statusList(context),
-                  chatList(context),
+                  ChatList(),
+                  ChatList(),
+                  StatusList(),
+                  ChatList(),
                 ],
               )),
           floatingActionButton: fab(_page, context),

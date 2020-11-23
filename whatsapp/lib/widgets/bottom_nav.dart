@@ -17,32 +17,39 @@ Widget bottomNavBar(int _page, BuildContext context, navigationTapped) {
       type: BottomNavigationBarType.fixed,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Badge(
-              badgeContent: Text("9"),
+            icon: Badge(
+                badgeContent: Text("9"),
+                badgeColor: Theme.of(context).accentColor,
+                child: Container(
+                    child: Image.network(
+                  "https://cdn.onlinewebfonts.com/svg/img_314410.png",
+                  height: 24,
+                  width: 24,
+                  color: _page == 0 ?Theme.of(context).accentColor : null,
+                ))),
+            label: ""),
+        BottomNavigationBarItem(
+            icon: Badge(
+              badgeContent: Text("2"),
+              badgeColor:Theme.of(context).accentColor,
+              child: Container(
+                    child: Image.network(
+                  "https://cdn.iconscout.com/icon/free/png-512/group-chat-2193254-1878104.png",
+                  height: 24,
+                  width: 24,
+                  color: _page == 1 ?Theme.of(context).accentColor : null,
+                ))
+            ),
+            label: ""),
+        BottomNavigationBarItem(
+            icon: Badge(
+              badgeContent: Text(""),
               badgeColor: Theme.of(context).accentColor,
-              child: Icon(Icons.message)),
-          label: ""
-        ),
-        BottomNavigationBarItem(
-          icon: Badge(
-            badgeContent: Text("2"),
-            badgeColor: Theme.of(context).accentColor,
-            child: Icon(
-              Icons.group_rounded,
+              child: Icon(
+                Icons.panorama_fish_eye_rounded,
+              ),
             ),
-          ),
-          label: ""
-        ),
-        BottomNavigationBarItem(
-          icon: Badge(
-            badgeContent: Text(""),
-            badgeColor: Theme.of(context).accentColor,
-            child: Icon(
-              Icons.panorama_fish_eye_rounded,
-            ),
-          ),
-          label: ""
-        ),
+            label: ""),
         BottomNavigationBarItem(
           icon: Icon(Icons.call),
           label: "",
