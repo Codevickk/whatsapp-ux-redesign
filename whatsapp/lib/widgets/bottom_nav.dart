@@ -13,7 +13,7 @@ Widget bottomNavBar(int _page, BuildContext context, navigationTapped) {
           ),
     ),
     child: BottomNavigationBar(
-      elevation: 4.0,
+      elevation: 2.0,
       type: BottomNavigationBarType.fixed,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
