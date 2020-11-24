@@ -1,0 +1,6 @@
+{
+    "scm.alwaysShowActions": true,
+    "scm.providerCountBadge": "auto",
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "gitlens.mode.statusBar.alignment": "left"
+}

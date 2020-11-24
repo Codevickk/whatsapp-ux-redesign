@@ -1,4 +1,0 @@
-#Wed Nov 11 16:47:08 EAT 2020
-base.0=C\:\\projects\\flutter-apps\\whatsapp-ux-redesign\\flutter-whatsapp-ui-redesign\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
